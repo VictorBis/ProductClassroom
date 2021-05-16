@@ -1,4 +1,5 @@
 .hero {
   height: 77vh;
   background: $yellow;
+  @include flex(space-between, center, row);
 }

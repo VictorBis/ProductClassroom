@@ -109,8 +109,13 @@ ul {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   color: #000000;
+}
+
+section {
+  padding: 4.5rem;
 }
 
 .primary-btn {
@@ -125,6 +130,14 @@ a {
 .primary-btn.bg-yellow {
   -webkit-box-shadow: #f9c449 5px -5px 0px -2px, #000000 5px -5px;
           box-shadow: #f9c449 5px -5px 0px -2px, #000000 5px -5px;
+}
+
+.btn {
+  margin: 0.5rem 0;
+  padding: 1rem 4.75rem;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 4px;
 }
 
 /* Desktop */
@@ -184,5 +197,18 @@ a {
 .hero {
   height: 77vh;
   background: #f9c449;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=style.css.map */

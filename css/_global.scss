@@ -9,8 +9,13 @@ ul {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   color: $black;
+}
+
+section {
+  padding: 4.5rem;
 }
 
 .primary-btn {
@@ -22,6 +27,14 @@ a {
   &.bg-yellow {
     box-shadow: $yellow 5px -5px 0px -2px, $black 5px -5px;
   }
+}
+
+.btn {
+  margin: 0.5rem 0;
+  padding: 1rem 4.75rem;
+  background-color: $black;
+  color: $white;
+  border-radius: 4px;
 }
 
 /* Desktop */
