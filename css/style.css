@@ -1,15 +1,9 @@
 /* Functions */
 /* Imports */
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 /* Typography */
 body {
   font-family: degular, sans-serif;
+  color: #000000;
 }
 
 .bold-30 {
@@ -75,7 +69,7 @@ body {
 
 .medium-21 {
   font-weight: 500;
-  font-size: 1.3125;
+  font-size: 1.3125rem;
 }
 
 .medium-19 {
@@ -101,5 +95,94 @@ body {
 .regular-16 {
   font-weight: 400;
   font-size: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.primary-btn {
+  padding: 0.5rem 3.875rem 1rem 3.875rem;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: white 5px -5px 0px -2px, #000000 5px -5px;
+          box-shadow: white 5px -5px 0px -2px, #000000 5px -5px;
+}
+
+.primary-btn.bg-yellow {
+  -webkit-box-shadow: #f9c449 5px -5px 0px -2px, #000000 5px -5px;
+          box-shadow: #f9c449 5px -5px 0px -2px, #000000 5px -5px;
+}
+
+/* Desktop */
+.navbar {
+  padding: 1.125rem 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar.bg-yellow {
+  background-color: #f9c449;
+}
+
+.nav-links {
+  display: none;
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav-links .link {
+    margin: 0 2.25rem;
+  }
+  .nav-links .link:first-child {
+    margin-left: 0;
+  }
+  .nav-links .link:last-child {
+    margin-right: 0;
+  }
+}
+
+.hero {
+  height: 77vh;
+  background: #f9c449;
 }
 /*# sourceMappingURL=style.css.map */

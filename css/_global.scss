@@ -3,3 +3,27 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.primary-btn {
+  padding: 0.5rem 3.875rem 1rem 3.875rem;
+  background-color: $black;
+  color: $white;
+  border-radius: 4px;
+  box-shadow: rgb(255, 255, 255) 5px -5px 0px -2px, $black 5px -5px;
+  &.bg-yellow {
+    box-shadow: $yellow 5px -5px 0px -2px, $black 5px -5px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+}

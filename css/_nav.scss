@@ -1,0 +1,27 @@
+.navbar {
+  padding: 1.125rem 4.5rem;
+  @include flex(space-between, center, row);
+  &.bg-yellow {
+    background-color: $yellow;
+  }
+}
+
+.nav-links {
+  display: none;
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .nav-links {
+    @include flex(space-between, center, row);
+    .link {
+      margin: 0 2.25rem;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
