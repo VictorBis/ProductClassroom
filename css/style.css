@@ -1,0 +1,105 @@
+/* Functions */
+/* Imports */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: degular, sans-serif;
+}
+
+.bold-30 {
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+
+.bold-24 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.bold-23 {
+  font-weight: 700;
+  font-size: 1.4375rem;
+}
+
+.bold-21 {
+  font-weight: 700;
+  font-size: 1.3125rem;
+}
+
+.semibold-45 {
+  font-weight: 600;
+  font-size: 2.8125rem;
+}
+
+.semibold-36 {
+  font-weight: 600;
+  font-weight: 2.25rem;
+}
+
+.semibold-24 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.semibold-19 {
+  font-weight: 600;
+  font-size: 1.1875rem;
+}
+
+.semibold-italic-30 {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.875rem;
+}
+
+.medium-30 {
+  font-weight: 500;
+  font-size: 1.875rem;
+}
+
+.medium-24 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.medium-23 {
+  font-weight: 500;
+  font-size: 1.4375rem;
+}
+
+.medium-21 {
+  font-weight: 500;
+  font-size: 1.3125;
+}
+
+.medium-19 {
+  font-weight: 500;
+  font-size: 1.1875rem;
+}
+
+.regular-21 {
+  font-weight: 400;
+  font-size: 1.3125rem;
+}
+
+.regular-19 {
+  font-weight: 400;
+  font-size: 1.1875rem;
+}
+
+.regular-18 {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+.regular-16 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
