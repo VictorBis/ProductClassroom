@@ -15,7 +15,11 @@ a {
 }
 
 section {
-  padding: 4.5rem;
+  padding: 0 4.5rem;
+}
+
+span.nowrap {
+  white-space: nowrap;
 }
 
 .primary-btn {

@@ -1,5 +1,18 @@
 .hero {
-  height: 77vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background: $yellow;
   @include flex(space-between, center, row);
+  flex-wrap: wrap;
+
+  & .hero-info {
+    flex: 1 1 50%;
+  }
+  & .hero-img {
+    flex: 1 1 50%;
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
