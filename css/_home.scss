@@ -1,15 +1,25 @@
 .hero {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
   background: $yellow;
   @include flex(space-between, center, row);
   flex-wrap: wrap;
 
   & .hero-info {
-    flex: 1 1 50%;
+    flex: 1 1 46%;
+    & h1 {
+      margin-bottom: 2.5rem;
+    }
+    & h3 {
+      margin: 1.5rem 0;
+    }
+    & .opening-date {
+      width: 14rem;
+      text-align: center;
+    }
   }
   & .hero-img {
-    flex: 1 1 50%;
+    flex: 1 1 54%;
     & img {
       width: 100%;
       height: auto;
