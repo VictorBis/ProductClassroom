@@ -37,9 +37,21 @@ span.nowrap {
   }
 }
 
+.title {
+  @include flex(flex-start, flex-start, row);
+}
+
+.cube-wrapper {
+  margin-right: 3.75rem;
+}
+
 /* Margins */
 .top-72 {
   margin-top: 4.5rem;
+}
+
+.top-60 {
+  margin-top: 3.75rem;
 }
 
 .bottom-44 {
@@ -47,7 +59,6 @@ span.nowrap {
 }
 
 /* Buttons */
-
 .primary-btn {
   padding: 0.5rem 3.875rem 1rem 3.875rem;
   background-color: $black;
