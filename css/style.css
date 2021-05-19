@@ -246,6 +246,7 @@ span.nowrap {
 
 /* Buttons */
 .primary-btn {
+  margin-right: 5px;
   padding: 0.5rem 3.875rem 1rem 3.875rem;
   background-color: #000000;
   color: #ffffff;
