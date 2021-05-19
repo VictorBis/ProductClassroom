@@ -23,3 +23,9 @@
         border: 1.5px solid $black;
     }
 }
+
+.case-study{
+    & img{
+        width: 100%;
+    }
+}

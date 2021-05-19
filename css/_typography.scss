@@ -88,7 +88,6 @@ body {
   font-weight: 500;
   font-size: 1.1875rem;
   line-height: 25px;
-  letter-spacing: 0.2px;
 }
 
 .regular-21 {
@@ -111,4 +110,8 @@ body {
 .regular-16 {
   font-weight: 400;
   font-size: 1rem;
+}
+
+.space-2px{
+  letter-spacing: 0.2px;
 }
