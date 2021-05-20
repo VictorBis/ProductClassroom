@@ -26,23 +26,13 @@ span.nowrap {
   width: 66%;
 }
 
-
-.flex-50 {
-  @include flex(space-between, flex-start, row);
-  flex-wrap: wrap;
-  & .column-1 {
-    flex: 1 1 50%;
-  }
-  & .column-2 {
-    flex: 1 1 50%;
-  }
-}
-
 .grid-50{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
   gap: 3rem 1.5rem;
+  & img{width: 100%;
+  }
 }
 
 .four-column-grid{
