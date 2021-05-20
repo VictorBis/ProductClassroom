@@ -1,6 +1,6 @@
 .navbar {
-  padding: 1.125rem 4.5rem;
-  @include flex(space-between, center, row);
+  padding: 1.125rem 1rem;
+  @include flex(center, center, row);
   &.bg-yellow {
     background-color: $yellow;
   }
@@ -10,8 +10,25 @@
   display: none;
 }
 
+/* Tablet */
+@media screen and (min-width: 760px){
+  .navbar {
+    padding: 1.125rem 2rem;
+    &.bg-yellow {
+      background-color: $yellow;
+    }
+  }
+}
+
 /* Desktop */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px){
+  .navbar {
+    padding: 1.125rem 4.5rem;
+    @include flex(space-between, center, row);
+    &.bg-yellow {
+      background-color: $yellow;
+    }
+  }
   .nav-links {
     @include flex(space-between, center, row);
     .link {
