@@ -3,7 +3,7 @@
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: $yellow;
-  @include flex(flex-end, center, row);
+  @include flex(flex-end, center, column);
   flex-wrap: wrap;
 
   & .hero-info {
@@ -24,6 +24,7 @@
     & img {
       width: 100%;
       height: auto;
+      margin-top: 3.5rem;
     }
   }
   & .partenrs {
@@ -43,4 +44,26 @@
 
 .title-desc{
   @include flex(flex-start, flex-start, column);
+}
+
+
+/* Tablet */
+@media screen and (min-width: 760px){
+}
+
+/* Big Tablet */
+@media screen and (min-width: 960px){
+  .hero{
+    @include flex(flex-end, center, row);
+    & .hero-img {
+      flex: 1 1 54%;
+      & img {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px){
 }
