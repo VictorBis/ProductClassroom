@@ -1,13 +1,21 @@
 footer{
-    @include flex(space-between, flex-start, row);
-    flex-wrap: wrap;
-    padding: 2rem 4.5rem 4rem 4.5rem;
-    background-color: $yellow;
-    & .footer-option{
-        margin-right: 2rem;
-        margin-top: 2rem;
+    & .footer-options-container{
+        @include flex(space-between, flex-start, row);
+        flex-wrap: wrap;
+        padding: 2rem 4.5rem 4rem 4.5rem;
+        background-color: $yellow;
+        & .footer-option{
+            margin-right: 2rem;
+            margin-top: 2rem;
+        }
+        & .footer-options{
+            margin-top: 1rem;
+        }
     }
-    & .footer-options{
-        margin-top: 1rem;
+    & .copyright{
+        padding:2rem 4.5rem;
+        text-align: center;
+        background-color: black;
+        color:$yellow;
     }
 }

@@ -344,7 +344,7 @@ span.nowrap {
   }
 }
 
-footer {
+footer .footer-options-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,13 +364,20 @@ footer {
   background-color: #f9c449;
 }
 
-footer .footer-option {
+footer .footer-options-container .footer-option {
   margin-right: 2rem;
   margin-top: 2rem;
 }
 
-footer .footer-options {
+footer .footer-options-container .footer-options {
   margin-top: 1rem;
+}
+
+footer .copyright {
+  padding: 2rem 4.5rem;
+  text-align: center;
+  background-color: black;
+  color: #f9c449;
 }
 
 /* Hero section */
