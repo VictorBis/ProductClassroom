@@ -402,7 +402,7 @@ footer .footer-options-container {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 2rem 4.5rem 4rem 4.5rem;
+  padding: 2rem 1rem 4rem 1rem;
   background-color: #f9c449;
 }
 
@@ -416,10 +416,30 @@ footer .footer-options-container .footer-options {
 }
 
 footer .copyright {
-  padding: 2rem 4.5rem;
+  padding: 2rem 1rem;
   text-align: center;
   background-color: black;
   color: #f9c449;
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) {
+  footer .footer-options-container {
+    padding: 2rem 2rem 4rem 2rem;
+  }
+  footer .copyright {
+    padding: 2rem;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  footer .footer-options-container {
+    padding: 2rem 4.5rem 4rem 4.5rem;
+  }
+  footer .copyright {
+    padding: 2rem 4.5rem;
+  }
 }
 
 /* Hero section */
