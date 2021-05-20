@@ -40,3 +40,7 @@
     }
   }
 }
+
+.title-desc{
+  @include flex(flex-start, flex-start, column);
+}

@@ -31,7 +31,8 @@ span.nowrap {
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
   gap: 3rem 1.5rem;
-  & img{width: 100%;
+  & .event-img{
+    width: 100%;
   }
 }
 
@@ -72,6 +73,11 @@ span.nowrap {
 .top-44{
   margin-top: 2.75rem;
 }
+
+.top-48{
+  margin-top: 3rem;
+}
+
 .bottom-44 {
   margin-bottom: 2.75rem;
 }
