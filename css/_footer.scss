@@ -1,0 +1,13 @@
+footer{
+    @include flex(space-between, flex-start, row);
+    flex-wrap: wrap;
+    padding: 2rem 4.5rem 4rem 4.5rem;
+    background-color: $yellow;
+    & .footer-option{
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+    & .footer-options{
+        margin-top: 1rem;
+    }
+}

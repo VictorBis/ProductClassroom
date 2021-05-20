@@ -151,8 +151,21 @@ span.nowrap {
   white-space: nowrap;
 }
 
+.full-width {
+  padding: 0;
+  margin: 0;
+}
+
 .width-66 {
   width: 66%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-50.center {
+  margin: auto;
 }
 
 .grid-50 {
@@ -196,6 +209,10 @@ span.nowrap {
 
 .see-more-wrapper :first-child {
   margin-right: 1rem;
+}
+
+.cta {
+  position: relative;
 }
 
 .title {
@@ -242,6 +259,11 @@ span.nowrap {
 
 .padding-top-18 {
   padding-top: 18px;
+}
+
+.no-bottom-space {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* Buttons */
@@ -320,6 +342,35 @@ span.nowrap {
   .nav-links .link:last-child {
     margin-right: 0;
   }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem 4.5rem 4rem 4.5rem;
+  background-color: #f9c449;
+}
+
+footer .footer-option {
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+footer .footer-options {
+  margin-top: 1rem;
 }
 
 /* Hero section */
@@ -444,10 +495,13 @@ span.nowrap {
   left: 18px;
   width: 100%;
   height: 100%;
-  background-color: #fd624d;
   z-index: -1;
   border-radius: 8px;
   border: 1.5px solid #000000;
+}
+
+.colored-cards .card-background.red {
+  background-color: #fd624d;
 }
 
 .colored-cards .card-background.purple {
@@ -455,7 +509,7 @@ span.nowrap {
 }
 
 /* Cards for Case Studies */
-.case-study .window .window-actions {
+.case-study .window .window-actions, .final-cta .window .window-actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,23 +523,38 @@ span.nowrap {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #5bbfeb;
   border-bottom: 1.5px solid #000000;
   border-radius: 4px 4px 0 0;
   border: 1.5px solid #000000;
 }
 
-.case-study .window .window-actions .window-icon-wrapper {
+.case-study .window .window-actions.blue, .final-cta .window .window-actions.blue {
+  background-color: #5bbfeb;
+}
+
+.case-study .window .window-actions.light-blue, .final-cta .window .window-actions.light-blue {
+  background-color: #b0d8f0;
+}
+
+.case-study .window .window-actions.wide-line, .final-cta .window .window-actions.wide-line {
+  border: 3px solid #000000;
+}
+
+.case-study .window .window-actions.wide-line .window-icon-wrapper, .final-cta .window .window-actions.wide-line .window-icon-wrapper {
+  border-right: 3px solid #000000;
+}
+
+.case-study .window .window-actions .window-icon-wrapper, .final-cta .window .window-actions .window-icon-wrapper {
   padding: 0.5rem;
   border-right: 1.5px solid #000000;
 }
 
-.case-study .window .window-actions .window-icon-wrapper img {
+.case-study .window .window-actions .window-icon-wrapper img, .final-cta .window .window-actions .window-icon-wrapper img {
   width: 1rem;
   height: auto;
 }
 
-.case-study .window .window-actions .window-icon-wrapper img.width-21 {
+.case-study .window .window-actions .window-icon-wrapper img.width-21, .final-cta .window .window-actions .window-icon-wrapper img.width-21 {
   width: 1.375rem;
 }
 
@@ -582,9 +651,46 @@ span.nowrap {
 
 .member img {
   width: 100%;
+  height: auto;
   border-radius: 50%;
   border: 1.5px solid #000000;
   -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* CTA end of page */
+.final-cta {
+  padding: 4.5rem 4.75rem;
+}
+
+.final-cta.blue {
+  background-color: #497ebf;
+}
+
+.final-cta .outer-container {
+  padding: 1.5rem 1.5rem;
+  border-radius: 0 0 4px 4px;
+  border: 3px solid #000000;
+  border-top: none;
+  background-color: #0bba85;
+}
+
+.final-cta .inner-container {
+  padding: 2.5rem 1rem;
+  border-radius: 4px;
+  border: 3px solid #000000;
+  background-color: #fc8746;
+  text-align: center;
+}
+
+.final-cta .inner-container h2 {
+  margin-bottom: 1.75rem;
+}
+
+.final-cta .click {
+  position: absolute;
+  top: 1rem;
+  -webkit-transform: translateX(-20rem);
+          transform: translateX(-20rem);
 }
 /*# sourceMappingURL=style.css.map */

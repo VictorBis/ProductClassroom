@@ -22,8 +22,20 @@ span.nowrap {
   white-space: nowrap;
 }
 
+.full-width{
+  padding: 0;
+  margin:0;
+}
+
 .width-66 {
   width: 66%;
+}
+
+.width-50{
+  width: 50%;
+  &.center{
+    margin: auto;
+  }
 }
 
 .grid-50{
@@ -51,6 +63,9 @@ span.nowrap {
   } 
 }
 
+.cta{
+  position: relative;
+}
 .title {
   @include flex(flex-start, flex-start, row);
 }
@@ -85,6 +100,12 @@ span.nowrap {
 .padding-top-18{
   padding-top: 18px
 }
+
+.no-bottom-space{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 /* Buttons */
 
 .primary-btn {
