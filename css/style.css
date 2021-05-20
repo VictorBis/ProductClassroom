@@ -45,6 +45,7 @@ body {
 .semibold-24 {
   font-weight: 600;
   font-size: 1.5rem;
+  line-height: 36px;
 }
 
 .semibold-19 {
@@ -61,18 +62,19 @@ body {
   font-weight: 600;
   font-style: italic;
   font-size: 1.875rem;
+  line-height: 36px;
 }
 
 .medium-30 {
   font-weight: 500;
   font-size: 1.875rem;
-  line-height: 54px;
-  letter-spacing: -1px;
+  line-height: 36px;
 }
 
 .medium-24 {
   font-weight: 500;
   font-size: 1.5rem;
+  line-height: 36px;
 }
 
 .medium-23 {
@@ -115,6 +117,11 @@ body {
 
 .space-2px {
   letter-spacing: 0.2px;
+}
+
+.week {
+  line-height: 54px;
+  letter-spacing: -1px;
 }
 
 * {
@@ -433,7 +440,80 @@ span.nowrap {
   border: 1.5px solid #000000;
 }
 
-.case-study img {
+.case-study .window .window-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #5bbfeb;
+  border-bottom: 1.5px solid #000000;
+  border-radius: 4px 4px 0 0;
+  border: 1.5px solid #000000;
+}
+
+.case-study .window .window-actions .window-icon-wrapper {
+  padding: 0.5rem;
+  border-right: 1.5px solid #000000;
+}
+
+.case-study .window .window-actions .window-icon-wrapper img {
+  width: 1rem;
+  height: auto;
+}
+
+.case-study .window .window-actions .window-icon-wrapper img.width-21 {
+  width: 1.375rem;
+}
+
+.case-study .case-study-thumbnail {
   width: 100%;
+  height: auto;
+  border-radius: 0 0 4px 4px;
+  border: 1.5px solid #000000;
+  border-top: none;
+  -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.case-study .testimonial {
+  margin-top: 1rem;
+}
+
+.case-study .testimonial q {
+  margin-right: 0.5rem;
+}
+
+.case-study .testimonial .graduate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.75rem;
+}
+
+.case-study .testimonial .graduate img {
+  width: 3.5rem;
+  height: auto;
+  margin-right: 1.75rem;
+  border-radius: 50%;
+  border: 1.5px solid #000000;
 }
 /*# sourceMappingURL=style.css.map */
