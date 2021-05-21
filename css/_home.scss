@@ -15,7 +15,7 @@
       margin: 1.5rem 0;
     }
     & .opening-date {
-      width: 16.56em;
+      width: 14.56em;
       text-align: center;
     }
   }
@@ -42,13 +42,20 @@
   }
 }
 
-.title-desc{
+.title-desc {
   @include flex(flex-start, flex-start, column);
 }
 
+/* Tablet */
+@media screen and (min-width: 760px) {
+  & .opening-date {
+    width: 16.56em;
+  }
+}
+
 /* Big Tablet */
-@media screen and (min-width: 960px){
-  .hero{
+@media screen and (min-width: 960px) {
+  .hero {
     @include flex(flex-end, center, row);
     & .hero-img {
       flex: 1 1 54%;
@@ -60,5 +67,5 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
 }
