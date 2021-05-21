@@ -1,233 +1,233 @@
 /* Cards for FAQ's and Weeks*/
 
-.colored-cards{
+.colored-cards {
+  position: relative;
+  border: 1.5px solid $black;
+  border-radius: 8px;
+  margin-right: 18px;
+  background-color: white;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+  & .card-content {
+    padding: 1rem 1rem;
+  }
+  & .card-description {
+    margin: 1.25rem 0;
+  }
+  & .card-background {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 8px;
+    border: 1.5px solid $black;
+
+    &.red {
+      background-color: $red;
+    }
+    &.purple {
+      background-color: $darkpurple;
+    }
+  }
+}
+
+/* Cards for Case Studies */
+
+.case-study,
+.final-cta {
+  & .window {
+    & .window-actions {
+      @include flex(flex-start, baseline, row);
+      border-bottom: 1.5px solid $black;
+      border-radius: 4px 4px 0 0;
+      border: 1.5px solid $black;
+
+      &.blue {
+        background-color: $blue;
+      }
+      &.light-blue {
+        background-color: $lightblue;
+      }
+
+      &.wide-line {
+        border: 3px solid $black;
+        & .window-icon-wrapper {
+          border-right: 3px solid $black;
+        }
+      }
+      & .window-icon-wrapper {
+        padding: 0.5rem;
+        border-right: 1.5px solid $black;
+        & img {
+          width: 1rem;
+          height: auto;
+          &.width-21 {
+            width: 1.375rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.case-study {
+  & .case-study-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 4px 4px;
+    border: 1.5px solid $black;
+    border-top: none;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+  }
+
+  & .testimonial {
+    & q {
+      margin-right: 0.5rem;
+    }
+    margin-top: 1rem;
+    & .graduate {
+      @include flex(flex-start, center, row);
+      margin-top: 0.75rem;
+      & img {
+        width: 3.5rem;
+        height: auto;
+        margin-right: 1.75rem;
+        border-radius: 50%;
+        border: 1.5px solid $black;
+      }
+    }
+  }
+}
+
+/* Short cards for Lecturers + Speakers and Members */
+
+.lecturer-speaker-small {
+  .lecturer-picture-wrapper {
+    position: relative;
+    border-radius: 100px;
+    margin-right: 8px;
+    & .picture-wrapper-background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      border-radius: 8px;
+      border: 1.5px solid $black;
+      z-index: -1;
+    }
+    & img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1.5px solid $black;
+      box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.lecturer-speaker-small,
+.member {
+  & .lecturer-short-desc {
+    @include flex(center, center, column);
+    margin-top: 1.375rem;
+    & h5,
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.member {
+  & img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 1.5px solid $black;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* CTA end of page */
+.final-cta {
+  padding: 4.5rem 1rem;
+  &.blue {
+    background-color: $darkblue;
+  }
+
+  .width-50 {
+    &.center {
+      margin: auto;
+    }
+  }
+
+  & .outer-container {
+    padding: 1.5rem 1.5rem;
+    border-radius: 0 0 4px 4px;
+    border: 3px solid $black;
+    border-top: none;
+    background-color: $darkgreen;
+  }
+  & .inner-container {
+    padding: 2.5rem 1rem;
+    border-radius: 4px;
+    border: 3px solid $black;
+    background-color: $orange;
+    text-align: center;
+    & h2 {
+      margin-bottom: 1.75rem;
+    }
+  }
+  & .click {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) {
+  .colored-cards {
     position: relative;
     border: 1.5px solid $black;
     border-radius: 8px;
     margin-right: 18px;
     background-color: white;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
-    & .card-content{
-        padding: 1rem 1rem;
-    }
-    & .card-description{
-        margin: 1.25rem 0;
-    }
-    & .card-background{
-        position: absolute;
-        top: 18px;
-        left: 18px;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        border-radius: 8px;
-        border: 1.5px solid $black;
-
-        &.red{
-            background-color: $red;
-        }
-        &.purple{
-            background-color: $darkpurple;
-        }
-    }
-}
-
-/* Cards for Case Studies */
-
-.case-study, .final-cta{
-    & .window{
-        & .window-actions{
-            @include flex(flex-start,baseline,row);
-            border-bottom: 1.5px solid $black;
-            border-radius: 4px 4px 0 0;
-            border: 1.5px solid $black;
-
-            &.blue{
-                background-color: $blue;
-            }
-            &.light-blue{
-                background-color: $lightblue;
-            }
-
-            &.wide-line{
-                border: 3px solid $black;
-                & .window-icon-wrapper{
-                    border-right: 3px solid $black;
-                }
-            }
-            & .window-icon-wrapper{
-                padding: 0.5rem;
-                border-right: 1.5px solid $black;
-                & img{
-                    width: 1rem;
-                    height: auto;
-                    &.width-21{
-                        width: 1.375rem;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.case-study{
-    & .case-study-thumbnail{
-        width: 100%;
-        height: auto;
-        border-radius: 0 0 4px 4px;
-        border: 1.5px solid $black;
-        border-top: none;
-        box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
-    }
-
-    & .testimonial{
-        & q{
-            margin-right: 0.5rem;
-        }
-        margin-top: 1rem;
-        & .graduate{
-            @include flex(flex-start, center, row);
-            margin-top: 0.75rem;
-            & img{
-                width: 3.5rem;
-                height: auto;
-                margin-right: 1.75rem;
-                border-radius: 50%;
-                border: 1.5px solid $black;
-            }
-        }
-    }
-}
-
-/* Short cards for Lecturers + Speakers and Members */
-
-.lecturer-speaker-small{
-    .lecturer-picture-wrapper{
-        position: relative;
-        border-radius: 100px;
-        margin-right: 8px;
-        & .picture-wrapper-background{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 8px;
-            left: 8px;
-            border-radius: 8px;
-            border: 1.5px solid $black;
-            z-index: -1;
-        }
-        & img{
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            border: 1.5px solid $black;
-            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
-        }
-    }
-}
-
-.lecturer-speaker-small, .member{
-    & .lecturer-short-desc{
-        @include flex(center, center, column);
-        margin: 1.375rem 1rem 0 1rem;
-        & h5, p{
-            text-align: center;
-        }
-    }
-}
-
-.member{
-    & img{
-        width: 100%;
-        height: auto;
-        border-radius: 50%;
-        border: 1.5px solid $black;
-        box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
-    }
-}
-
-
-/* CTA end of page */
-.final-cta{
-    padding: 4.5rem 1rem;
-    &.blue{
-      background-color: $darkblue;
-    }
-
-    .width-50{
-        &.center{
-          margin: auto;
-        }
-    }
-
-    & .outer-container{
-        padding: 1.5rem 1.5rem;
-        border-radius: 0 0 4px 4px;
-        border: 3px solid $black;
-        border-top: none;
-        background-color: $darkgreen;
-    }
-    & .inner-container{
-        padding: 2.5rem 1rem;
-        border-radius: 4px;
-        border: 3px solid $black;
-        background-color: $orange;
-        text-align: center;
-        & h2{
-            margin-bottom: 1.75rem;
-        }
-    }
-    & .click{
-        display: none;
+    & .card-content {
+      padding: 1rem 2.25rem;
     }
   }
-
-
-/* Tablet */
-@media screen and (min-width: 760px){
-    .colored-cards{
-        position: relative;
-        border: 1.5px solid $black;
-        border-radius: 8px;
-        margin-right: 18px;
-        background-color: white;
-        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
-        & .card-content{
-            padding: 1rem 2.25rem;
-        }
+  .final-cta {
+    & .click {
+      display: initial;
+      position: absolute;
+      top: 1rem;
+      transform: translateX(-20rem);
     }
-    .final-cta{
-        & .click{
-            display: initial;
-            position: absolute;
-            top: 1rem;
-            transform: translateX(-20rem);
-        }
-      }
+  }
 }
-  
+
 /* Big Tablet */
-@media screen and (min-width: 960px){
-    .final-cta{
-        .width-50{
-            width: 80%;
-            &.center{
-              margin: auto;
-            }
-        }
+@media screen and (min-width: 960px) {
+  .final-cta {
+    .width-50 {
+      width: 80%;
+      &.center {
+        margin: auto;
+      }
     }
+  }
 }
-  
+
 /* Desktop */
 @media screen and (min-width: 1200px) {
-    .final-cta{
-        padding: 4.5rem 4.75rem;
-        .width-50{
-            width: 50%;
-            &.center{
-              margin: auto;
-            }
-        }
+  .final-cta {
+    padding: 4.5rem 4.75rem;
+    .width-50 {
+      width: 50%;
+      &.center {
+        margin: auto;
+      }
     }
+  }
 }
-  
