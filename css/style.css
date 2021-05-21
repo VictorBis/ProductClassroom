@@ -592,7 +592,7 @@ footer .copyright {
 }
 
 .colored-cards .card-content {
-  padding: 1rem 2.25rem;
+  padding: 1rem 1rem;
 }
 
 .colored-cards .card-description {
@@ -807,6 +807,18 @@ footer .copyright {
 
 /* Tablet */
 @media screen and (min-width: 760px) {
+  .colored-cards {
+    position: relative;
+    border: 1.5px solid #000000;
+    border-radius: 8px;
+    margin-right: 18px;
+    background-color: white;
+    -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+  }
+  .colored-cards .card-content {
+    padding: 1rem 2.25rem;
+  }
   .final-cta .click {
     display: initial;
     position: absolute;
