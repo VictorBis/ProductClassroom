@@ -126,6 +126,16 @@ body {
   letter-spacing: -1px;
 }
 
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .semibold-45 {
+    font-size: 2.25rem;
+  }
+  .semibold-36 {
+    line-height: 42px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
