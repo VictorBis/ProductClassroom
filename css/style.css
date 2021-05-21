@@ -301,6 +301,14 @@ span.nowrap {
   .no-grid-mobile {
     display: initial;
   }
+  .no-grid-mobile .desc,
+  .no-grid-mobile .bottom-44,
+  .no-grid-mobile .top-48 {
+    margin-top: 1.5rem;
+  }
+  .no-grid-mobile .event-img {
+    margin-top: 3.75rem;
+  }
 }
 
 /* Big Tablet */
