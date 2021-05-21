@@ -522,7 +522,7 @@ footer .copyright {
 }
 
 .hero .hero-info .opening-date {
-  width: 14.56em;
+  width: 14.56rem;
   text-align: center;
 }
 
@@ -585,8 +585,8 @@ footer .copyright {
 
 /* Tablet */
 @media screen and (min-width: 760px) {
-  .opening-date {
-    width: 16.56em;
+  .hero .hero-info .opening-date {
+    width: 16.56rem;
   }
 }
 
@@ -657,7 +657,8 @@ footer .copyright {
 }
 
 /* Cards for Case Studies */
-.case-study .window .window-actions, .final-cta .window .window-actions {
+.case-study .window .window-actions,
+.final-cta .window .window-actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,33 +677,40 @@ footer .copyright {
   border: 1.5px solid #000000;
 }
 
-.case-study .window .window-actions.blue, .final-cta .window .window-actions.blue {
+.case-study .window .window-actions.blue,
+.final-cta .window .window-actions.blue {
   background-color: #5bbfeb;
 }
 
-.case-study .window .window-actions.light-blue, .final-cta .window .window-actions.light-blue {
+.case-study .window .window-actions.light-blue,
+.final-cta .window .window-actions.light-blue {
   background-color: #b0d8f0;
 }
 
-.case-study .window .window-actions.wide-line, .final-cta .window .window-actions.wide-line {
+.case-study .window .window-actions.wide-line,
+.final-cta .window .window-actions.wide-line {
   border: 3px solid #000000;
 }
 
-.case-study .window .window-actions.wide-line .window-icon-wrapper, .final-cta .window .window-actions.wide-line .window-icon-wrapper {
+.case-study .window .window-actions.wide-line .window-icon-wrapper,
+.final-cta .window .window-actions.wide-line .window-icon-wrapper {
   border-right: 3px solid #000000;
 }
 
-.case-study .window .window-actions .window-icon-wrapper, .final-cta .window .window-actions .window-icon-wrapper {
+.case-study .window .window-actions .window-icon-wrapper,
+.final-cta .window .window-actions .window-icon-wrapper {
   padding: 0.5rem;
   border-right: 1.5px solid #000000;
 }
 
-.case-study .window .window-actions .window-icon-wrapper img, .final-cta .window .window-actions .window-icon-wrapper img {
+.case-study .window .window-actions .window-icon-wrapper img,
+.final-cta .window .window-actions .window-icon-wrapper img {
   width: 1rem;
   height: auto;
 }
 
-.case-study .window .window-actions .window-icon-wrapper img.width-21, .final-cta .window .window-actions .window-icon-wrapper img.width-21 {
+.case-study .window .window-actions .window-icon-wrapper img.width-21,
+.final-cta .window .window-actions .window-icon-wrapper img.width-21 {
   width: 1.375rem;
 }
 
@@ -776,7 +784,8 @@ footer .copyright {
           box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
 }
 
-.lecturer-speaker-small .lecturer-short-desc, .member .lecturer-short-desc {
+.lecturer-speaker-small .lecturer-short-desc,
+.member .lecturer-short-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -790,10 +799,13 @@ footer .copyright {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1.375rem 1rem 0 1rem;
+  margin-top: 1.375rem;
 }
 
-.lecturer-speaker-small .lecturer-short-desc h5, .lecturer-speaker-small .lecturer-short-desc p, .member .lecturer-short-desc h5, .member .lecturer-short-desc p {
+.lecturer-speaker-small .lecturer-short-desc h5,
+.lecturer-speaker-small .lecturer-short-desc p,
+.member .lecturer-short-desc h5,
+.member .lecturer-short-desc p {
   text-align: center;
 }
 

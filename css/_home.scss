@@ -15,7 +15,7 @@
       margin: 1.5rem 0;
     }
     & .opening-date {
-      width: 14.56em;
+      width: 14.56rem;
       text-align: center;
     }
   }
@@ -48,8 +48,12 @@
 
 /* Tablet */
 @media screen and (min-width: 760px) {
-  & .opening-date {
-    width: 16.56em;
+  .hero {
+    & .hero-info {
+      & .opening-date {
+        width: 16.56rem;
+      }
+    }
   }
 }
 
