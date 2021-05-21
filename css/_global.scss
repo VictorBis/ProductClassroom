@@ -31,13 +31,6 @@ span.nowrap {
   width: 66%;
 }
 
-.width-50{
-  width: 50%;
-  &.center{
-    margin: auto;
-  }
-}
-
 .grid-50{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
