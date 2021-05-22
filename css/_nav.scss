@@ -1,3 +1,7 @@
+nav{
+  position: relative;
+}
+
 .navbar {
   padding: 1.125rem 1rem;
   @include flex(center, center, row);
@@ -25,8 +29,10 @@
   .navbar {
     padding: 1.125rem 4.5rem;
     @include flex(space-between, center, row);
-    &.bg-yellow {
-      background-color: $yellow;
+    &.sticky{
+      position: sticky;
+      top: 1rem;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
   }
   .nav-links {

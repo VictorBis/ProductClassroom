@@ -30,6 +30,12 @@
       background-color: $darkpurple;
     }
   }
+  .week-flex{
+    @include flex(flex-start,flex-start,column);
+    & .no-margin-top{
+      margin-top: -1rem
+    }
+  }
 }
 
 /* Cards for Case Studies */

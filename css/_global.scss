@@ -48,6 +48,23 @@ span.nowrap {
   gap: 2rem 1rem;
 }
 
+.flex-auto-resize{
+  @include flex(space-around,flex-end, row);
+  flex-wrap: wrap;
+  & .margin-top-3{
+    margin-top: 3rem;
+  }
+  & .step-container{
+    flex: 0 1 31%;
+    & .step-img{
+      @include flex(center, center, column);
+    }
+    & .step-desc{
+      margin-top: 2rem;
+    }
+  }
+}
+
 .see-more-wrapper {
   margin-top: 3rem;
   @include flex(flex-end, center, row);
@@ -67,7 +84,7 @@ span.nowrap {
   margin-right: 2rem;
 }
 
-/* Margins */
+/* Spaces */
 
 .padding-88 {
   padding-top: 2.75rem;
@@ -171,6 +188,15 @@ span.nowrap {
   .cube-wrapper {
     margin-right: 3.75rem;
   }
+
+}
+
+@media screen and (min-width: 970px){
+  .flex-auto-resize{
+    & .step-container{
+      flex: 0 1 40%;
+    }
+  }
 }
 
 /* Desktop */
@@ -180,5 +206,16 @@ span.nowrap {
   }
   .four-column-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .flex-auto-resize{
+    & .margin-top-3{
+      margin-top: 0;
+    }
+    & .step-container{
+      flex: 0 1 31%;
+    }
   }
 }

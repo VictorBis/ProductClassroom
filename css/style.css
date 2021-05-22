@@ -39,8 +39,13 @@ body {
 .semibold-36 {
   font-weight: 600;
   font-size: 2.25rem;
-  line-height: 25px;
-  letter-spacing: 0.2px;
+  line-height: 35px;
+}
+
+.semibold-30 {
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 35px;
 }
 
 .semibold-24 {
@@ -192,6 +197,53 @@ span.nowrap {
   gap: 2rem 1rem;
 }
 
+.flex-auto-resize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-auto-resize .margin-top-3 {
+  margin-top: 3rem;
+}
+
+.flex-auto-resize .step-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31%;
+          flex: 0 1 31%;
+}
+
+.flex-auto-resize .step-container .step-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-auto-resize .step-container .step-desc {
+  margin-top: 2rem;
+}
+
 .see-more-wrapper {
   margin-top: 3rem;
   display: -webkit-box;
@@ -237,7 +289,7 @@ span.nowrap {
   margin-right: 2rem;
 }
 
-/* Margins */
+/* Spaces */
 .padding-88 {
   padding-top: 2.75rem;
   padding-bottom: 2.75rem;
@@ -346,6 +398,14 @@ span.nowrap {
   }
 }
 
+@media screen and (min-width: 970px) {
+  .flex-auto-resize .step-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+  }
+}
+
 /* Desktop */
 @media screen and (min-width: 1200px) {
   section {
@@ -355,6 +415,21 @@ span.nowrap {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
+}
+
+@media screen and (min-width: 1300px) {
+  .flex-auto-resize .margin-top-3 {
+    margin-top: 0;
+  }
+  .flex-auto-resize .step-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 31%;
+            flex: 0 1 31%;
+  }
+}
+
+nav {
+  position: relative;
 }
 
 .navbar {
@@ -410,8 +485,12 @@ span.nowrap {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .navbar.bg-yellow {
-    background-color: #f9c449;
+  .navbar.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .nav-links {
     display: -webkit-box;
@@ -664,6 +743,26 @@ footer .copyright {
 
 .colored-cards .card-background.purple {
   background-color: #7758a3;
+}
+
+.colored-cards .week-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.colored-cards .week-flex .no-margin-top {
+  margin-top: -1rem;
 }
 
 /* Cards for Case Studies */
