@@ -30,10 +30,10 @@
       background-color: $darkpurple;
     }
   }
-  .week-flex{
-    @include flex(flex-start,flex-start,column);
-    & .no-margin-top{
-      margin-top: -0.75rem
+  .week-flex {
+    @include flex(flex-start, flex-start, column);
+    & .no-margin-top {
+      margin-top: -0.75rem;
     }
   }
 }
@@ -52,6 +52,7 @@
       &.blue {
         background-color: $blue;
       }
+
       &.light-blue {
         background-color: $lightblue;
       }
@@ -102,9 +103,9 @@
         border-radius: 50%;
         border: 1.5px solid $black;
       }
-      & .project{
+      & .project {
         @include flex(flex-start, flex-start, column);
-        & p{
+        & p {
           margin-top: -0.75rem;
         }
       }
@@ -168,6 +169,9 @@
     background-color: $darkblue;
   }
 
+  &.purple {
+    background-color: $darkpurple;
+  }
   .width-50 {
     &.center {
       margin: auto;

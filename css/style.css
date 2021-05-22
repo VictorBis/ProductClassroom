@@ -326,6 +326,10 @@ span.nowrap {
   margin-bottom: 2.75rem;
 }
 
+.bottom-18 {
+  margin-bottom: 18px;
+}
+
 .padding-top-18 {
   padding-top: 18px;
 }
@@ -974,6 +978,10 @@ footer .copyright {
 
 .final-cta.blue {
   background-color: #497ebf;
+}
+
+.final-cta.purple {
+  background-color: #7758a3;
 }
 
 .final-cta .width-50.center {
