@@ -33,7 +33,7 @@
   .week-flex{
     @include flex(flex-start,flex-start,column);
     & .no-margin-top{
-      margin-top: -1rem
+      margin-top: -0.75rem
     }
   }
 }
