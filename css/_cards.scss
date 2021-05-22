@@ -102,6 +102,12 @@
         border-radius: 50%;
         border: 1.5px solid $black;
       }
+      & .project{
+        @include flex(flex-start, flex-start, column);
+        & p{
+          margin-top: -0.75rem;
+        }
+      }
     }
   }
 }
