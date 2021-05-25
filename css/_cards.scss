@@ -210,18 +210,18 @@
       display: initial;
       &.red {
         top: -1.5rem;
-        left: 37%;
+        left: 30%;
       }
       &.purple {
         top: 0.8rem;
       }
       &.green {
         top: 25%;
-        left: -2rem;
+        left: -1.25rem;
       }
       &.yellow {
-        bottom: 15%;
-        right: -2rem;
+        bottom: -3rem;
+        right: -1.25rem;
       }
     }
     & .card-cover {
@@ -242,7 +242,9 @@
     }
   }
   & .click {
-    display: none;
+    position: absolute;
+    top: 0;
+    transform: translateX(-15.5rem);
   }
 }
 
@@ -283,24 +285,31 @@
         margin: auto;
       }
     }
+    & .card-cta-container {
+      & .qm {
+        position: absolute;
+        display: initial;
+        &.red {
+          top: -1.5rem;
+          left: 37%;
+        }
+        &.green {
+          top: 25%;
+          left: -2rem;
+        }
+        &.yellow {
+          bottom: 15%;
+          right: -2rem;
+        }
+      }
+    }
     & .click {
-      display: initial;
-      position: absolute;
       top: 1rem;
       transform: translateX(-20rem);
     }
   }
 }
 
-@media screen and (max-width: 760px) {
-  .final-cta {
-    & .card-cta-container {
-      & .qm {
-        display: none;
-      }
-    }
-  }
-}
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .final-cta {

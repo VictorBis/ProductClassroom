@@ -1025,7 +1025,7 @@ footer .copyright {
 
 .final-cta .card-cta-container .qm.red {
   top: -1.5rem;
-  left: 37%;
+  left: 30%;
 }
 
 .final-cta .card-cta-container .qm.purple {
@@ -1034,12 +1034,12 @@ footer .copyright {
 
 .final-cta .card-cta-container .qm.green {
   top: 25%;
-  left: -2rem;
+  left: -1.25rem;
 }
 
 .final-cta .card-cta-container .qm.yellow {
-  bottom: 15%;
-  right: -2rem;
+  bottom: -3rem;
+  right: -1.25rem;
 }
 
 .final-cta .card-cta-container .card-cover {
@@ -1064,7 +1064,10 @@ footer .copyright {
 }
 
 .final-cta .click {
-  display: none;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(-15.5rem);
+          transform: translateX(-15.5rem);
 }
 
 /* Mini tablet */
@@ -1100,18 +1103,26 @@ footer .copyright {
   .final-cta .width-50.center {
     margin: auto;
   }
-  .final-cta .click {
-    display: initial;
+  .final-cta .card-cta-container .qm {
     position: absolute;
+    display: initial;
+  }
+  .final-cta .card-cta-container .qm.red {
+    top: -1.5rem;
+    left: 37%;
+  }
+  .final-cta .card-cta-container .qm.green {
+    top: 25%;
+    left: -2rem;
+  }
+  .final-cta .card-cta-container .qm.yellow {
+    bottom: 15%;
+    right: -2rem;
+  }
+  .final-cta .click {
     top: 1rem;
     -webkit-transform: translateX(-20rem);
             transform: translateX(-20rem);
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .final-cta .card-cta-container .qm {
-    display: none;
   }
 }
 
