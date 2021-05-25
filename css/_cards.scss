@@ -207,6 +207,7 @@
     border-top: none;
     & .qm {
       position: absolute;
+      display: initial;
       &.red {
         top: -1.5rem;
         left: 37%;
@@ -224,13 +225,13 @@
       }
     }
     & .card-cover {
-      width: 101%;
-      margin-left: -0.5%;
+      width: 100%;
       margin-top: 3px;
       & img {
         width: 100%;
-        height: auto;
+        height: 7.5rem;
         margin-top: -0.3px;
+        object-fit: cover;
       }
     }
     & h2 {
@@ -242,6 +243,23 @@
   }
   & .click {
     display: none;
+  }
+}
+
+/* Mini tablet */
+@media screen and (min-width: 500px) {
+  .final-cta {
+    & .card-cta-container {
+      & .card-cover {
+        width: 101%;
+        margin-left: -0.5%;
+        & img {
+          width: 100%;
+          height: auto;
+          margin-top: -1px;
+        }
+      }
+    }
   }
 }
 
@@ -274,6 +292,15 @@
   }
 }
 
+@media screen and (max-width: 760px) {
+  .final-cta {
+    & .card-cta-container {
+      & .qm {
+        display: none;
+      }
+    }
+  }
+}
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .final-cta {
@@ -282,6 +309,13 @@
       width: 50%;
       &.center {
         margin: auto;
+      }
+    }
+    & .card-cta-container {
+      & .card-cover {
+        & img {
+          margin-top: -0.3px;
+        }
       }
     }
   }
