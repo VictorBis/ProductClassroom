@@ -1079,22 +1079,18 @@ footer .copyright {
   .colored-cards .card-content {
     padding: 1rem 2.25rem;
   }
+  .final-cta .width-50 {
+    width: 80%;
+  }
+  .final-cta .width-50.center {
+    margin: auto;
+  }
   .final-cta .click {
     display: initial;
     position: absolute;
     top: 1rem;
     -webkit-transform: translateX(-20rem);
             transform: translateX(-20rem);
-  }
-}
-
-/* Big Tablet */
-@media screen and (min-width: 960px) {
-  .final-cta .width-50 {
-    width: 80%;
-  }
-  .final-cta .width-50.center {
-    margin: auto;
   }
 }
 

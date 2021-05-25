@@ -259,23 +259,17 @@
     }
   }
   .final-cta {
-    & .click {
-      display: initial;
-      position: absolute;
-      top: 1rem;
-      transform: translateX(-20rem);
-    }
-  }
-}
-
-/* Big Tablet */
-@media screen and (min-width: 960px) {
-  .final-cta {
     .width-50 {
       width: 80%;
       &.center {
         margin: auto;
       }
+    }
+    & .click {
+      display: initial;
+      position: absolute;
+      top: 1rem;
+      transform: translateX(-20rem);
     }
   }
 }
