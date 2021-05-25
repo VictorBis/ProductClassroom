@@ -296,6 +296,19 @@
     border: 3px solid $black;
   }
 
+  .down-lines {
+    position: absolute;
+    bottom: 20%;
+    left: -15%;
+    z-index: -3;
+  }
+
+  .up-lines {
+    position: absolute;
+    top: 30%;
+    right: -15%;
+    z-index: -3;
+  }
   & .click {
     position: absolute;
     top: 0;
