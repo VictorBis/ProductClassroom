@@ -374,8 +374,8 @@
           left: 37%;
         }
         &.green {
-          top: 25%;
-          left: -2rem;
+          top: 22%;
+          left: -2.5rem;
         }
         &.yellow {
           bottom: 15%;
@@ -390,10 +390,15 @@
   }
 }
 
+@media screen and (min-width: 830px) {
+  .final-cta {
+    padding: 4.5rem 4.75rem;
+  }
+}
+
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .final-cta {
-    padding: 4.5rem 4.75rem;
     .width-50 {
       width: 50%;
       &.center {

@@ -1196,8 +1196,8 @@ footer .copyright {
     left: 37%;
   }
   .final-cta .card-cta-container .qm.green {
-    top: 25%;
-    left: -2rem;
+    top: 22%;
+    left: -2.5rem;
   }
   .final-cta .card-cta-container .qm.yellow {
     bottom: 15%;
@@ -1210,11 +1210,14 @@ footer .copyright {
   }
 }
 
-/* Desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 830px) {
   .final-cta {
     padding: 4.5rem 4.75rem;
   }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
   .final-cta .width-50 {
     width: 50%;
   }
