@@ -131,6 +131,11 @@ body {
   letter-spacing: -1px;
 }
 
+.lecturer-card .semibold-30,
+.lecturer-card .medium-24 {
+  line-height: 26px;
+}
+
 /* Mobile */
 @media screen and (max-width: 480px) {
   .semibold-45 {
@@ -1150,6 +1155,126 @@ footer .copyright {
   top: 0;
   -webkit-transform: translateX(-15.5rem);
           transform: translateX(-15.5rem);
+}
+
+/* Mentors + Lecturer +  Speakers card */
+.lecturer-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2rem;
+  border-radius: 4px;
+  border: 1.5px solid #000000;
+  -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+}
+
+.lecturer-card img {
+  width: 13rem;
+  height: auto;
+  margin-right: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 50%;
+}
+
+.lecturer-card .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.lecturer-card .info-container .main-info .category .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.lecturer-card .info-container .main-info .category .categories li {
+  padding: 0.5rem 1.5rem;
+  color: white;
+  border-radius: 4px;
+}
+
+.lecturer-card .info-container .main-info .category .categories li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.lecturer-card .info-container .main-info .category .categories li.mentor {
+  background-color: #497ebf;
+}
+
+.lecturer-card .info-container .main-info .category .categories li.lecturer {
+  background-color: #0bba85;
+}
+
+.lecturer-card .info-container .main-info .category .categories li.speaker {
+  background-color: #fc8746;
+}
+
+.lecturer-card .info-container .main-info .name-company {
+  margin: 1rem 0;
+}
+
+.lecturer-card .info-container .main-info .name-company h3 {
+  margin-bottom: 0.5rem;
+}
+
+.lecturer-card .info-container .lecturer-links .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.lecturer-card .info-container .lecturer-links .links :not(:last-child) {
+  padding-right: 0.5rem;
+  border-right: 2px solid #000000;
+}
+
+.lecturer-card .info-container .lecturer-links .links :not(:first-child) {
+  padding-left: 0.5rem;
 }
 
 /* Mobile */

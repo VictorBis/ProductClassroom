@@ -41,7 +41,7 @@ body {
   line-height: 35px;
 }
 
-.semibold-30{
+.semibold-30 {
   font-weight: 600;
   font-size: 1.875rem;
   line-height: 35px;
@@ -129,6 +129,12 @@ body {
   letter-spacing: -1px;
 }
 
+.lecturer-card {
+  & .semibold-30,
+  .medium-24 {
+    line-height: 26px;
+  }
+}
 /* Mobile */
 @media screen and (max-width: 480px) {
   .semibold-45 {
