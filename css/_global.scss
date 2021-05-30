@@ -149,8 +149,17 @@ span.nowrap {
   background-color: $black;
   color: $white;
   border-radius: 4px;
+  &.secondary {
+    color: $black;
+    background-color: $white;
+    border: 3px solid $black;
+  }
 }
 
+.btn-container.center {
+  margin-top: 2rem;
+  text-align: center;
+}
 /* Small Mobile */
 @media screen and (max-width: 330px) {
   .cube-wrapper {

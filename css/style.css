@@ -363,6 +363,17 @@ span.nowrap {
   border-radius: 4px;
 }
 
+.btn.secondary {
+  color: #000000;
+  background-color: #ffffff;
+  border: 3px solid #000000;
+}
+
+.btn-container.center {
+  margin-top: 2rem;
+  text-align: center;
+}
+
 /* Small Mobile */
 @media screen and (max-width: 330px) {
   .cube-wrapper {
