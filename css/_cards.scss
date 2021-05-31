@@ -163,6 +163,7 @@
 }
 
 /* CTA end of page */
+
 .final-cta {
   position: relative;
   padding: 4.5rem 1rem;
@@ -317,10 +318,11 @@
 }
 
 /* Mentors + Lecturer +  Speakers card */
+
 .lecturer-card {
   @include flex(flex-start, flex-start, row);
   padding: 2rem;
-  border-radius: 4px;
+  border-radius: 8px;
   border: 1.5px solid $black;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
   & img {
@@ -377,7 +379,40 @@
     }
   }
 }
+
+/* Accordion */
+.accordion{
+  @include flex(space-between, center, row);
+  & img{
+    padding:0.5rem 0.5rem 0.5rem 0;
+    width: 3.25rem;
+    height: auto;
+  }
+}
+.accordion-container{
+  width: 100%;
+  border: 1.5px solid $black;
+  border-radius: 8px;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+
+  & .accordion-desc{
+    padding: 2rem 3rem;
+    display: none;
+
+    & .accordion-field{
+      & ul{
+        padding-left: 1.75rem;
+        & li{
+          list-style-type:circle;
+        }
+      }
+    }
+  }
+}
+
 /* Mobile */
+
 @media screen and (max-width: 480px) {
   .final-cta {
     .multiple-card-cta-container {
@@ -393,7 +428,9 @@
     }
   }
 }
+
 /* Mini tablet */
+
 @media screen and (min-width: 500px) {
   .final-cta {
     & .card-cta-container {
@@ -420,7 +457,9 @@
     }
   }
 }
+
 /* Tablet */
+
 @media screen and (min-width: 760px) {
   .colored-cards {
     position: relative;
@@ -496,6 +535,7 @@
 }
 
 /* Desktop */
+
 @media screen and (min-width: 1200px) {
   .final-cta {
     .width-50 {

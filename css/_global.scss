@@ -28,6 +28,12 @@ section {
   padding: 0 1rem;
 }
 
+button{
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+}
 span.nowrap {
   white-space: nowrap;
 }
@@ -113,6 +119,10 @@ span.nowrap {
   margin-top: 3rem;
 }
 
+.top-24{
+  margin-top: 1.5rem;
+}
+
 .bottom-44 {
   margin-bottom: 2.75rem;
 }
@@ -156,9 +166,18 @@ span.nowrap {
   }
 }
 
-.btn-container.center {
-  margin-top: 2rem;
-  text-align: center;
+.download-link{
+  margin-top: 1rem;
+}
+
+.btn-container{
+  &.center{
+    margin-top: 2rem;
+    text-align: center;
+  }
+  &.flex{
+    @include flex(center, center, column);
+  }
 }
 /* Small Mobile */
 @media screen and (max-width: 330px) {
