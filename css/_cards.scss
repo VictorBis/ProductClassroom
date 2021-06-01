@@ -400,20 +400,11 @@
   border: 1.5px solid $black;
   border-radius: 8px;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
-  padding: 2rem;
+  padding: 2rem 3.5rem 2rem 6.875rem;
 
   & .accordion-desc{
-    padding: 2rem 3rem;
+    padding: 2rem 3.375rem 2rem 0;
     display: none;
-
-    & .accordion-field{
-      & ul{
-        padding-left: 1.75rem;
-        & li{
-          list-style-type:circle;
-        }
-      }
-    }
   }
 }
 
