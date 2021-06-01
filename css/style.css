@@ -1326,9 +1326,16 @@ footer .copyright {
 }
 
 .accordion img {
-  padding: 0.5rem 0.5rem 0.5rem 0;
+  padding: 0.5rem 0 0.5rem 0.5rem;
   width: 3.25rem;
   height: auto;
+  -webkit-transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.accordion.active img {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .accordion-container {

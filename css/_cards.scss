@@ -384,9 +384,15 @@
 .accordion{
   @include flex(space-between, center, row);
   & img{
-    padding:0.5rem 0.5rem 0.5rem 0;
+    padding:0.5rem 0 0.5rem 0.5rem;
     width: 3.25rem;
     height: auto;
+    transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+  &.active{
+    &  img{
+      transform: rotate(-180deg);
+    }
   }
 }
 .accordion-container{
