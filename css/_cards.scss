@@ -620,3 +620,15 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px){
+  .final-cta {
+    .card-cta-container{
+      & .card-cover {
+        & img {
+          margin-top: -1.3px;
+        }
+      }
+    }
+  }
+}

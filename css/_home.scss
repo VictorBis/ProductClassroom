@@ -2,7 +2,6 @@
 .hero {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background: $yellow;
   @include flex(flex-end, center, column);
   flex-wrap: wrap;
 
@@ -71,5 +70,8 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 2010px) {
+  .hero{
+    padding: 0 4.5rem;
+  }
 }

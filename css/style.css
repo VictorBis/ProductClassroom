@@ -696,7 +696,6 @@ footer .copyright {
 .hero {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background: #f9c449;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -825,6 +824,12 @@ footer .copyright {
 }
 
 /* Desktop */
+@media screen and (min-width: 2010px) {
+  .hero {
+    padding: 0 4.5rem;
+  }
+}
+
 /* Cards for FAQ's and Weeks*/
 .colored-cards {
   position: relative;
@@ -1618,6 +1623,12 @@ footer .copyright {
   }
   .lecturer-card img {
     margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .final-cta .card-cta-container .card-cover img {
+    margin-top: -1.3px;
   }
 }
 
