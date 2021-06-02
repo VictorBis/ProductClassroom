@@ -82,6 +82,7 @@ span.nowrap {
 }
 
 .see-more-wrapper {
+  display: inline-block;
   margin-top: 3rem;
   @include flex(flex-end, center, row);
   & :first-child {
@@ -180,6 +181,9 @@ span.nowrap {
   }
 }
 
+.cta-container{
+  @include flex(flex-end, center, row);
+}
 /* Small Mobile */
 @media screen and (max-width: 330px) {
   .cube-wrapper {
