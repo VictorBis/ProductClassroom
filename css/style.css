@@ -198,6 +198,10 @@ span.nowrap {
   margin: 0;
 }
 
+.width-100 {
+  width: 100%;
+}
+
 .width-66 {
   width: 66%;
 }
@@ -315,6 +319,15 @@ span.nowrap {
 
 .cube-wrapper {
   margin-right: 2rem;
+}
+
+.max-width-2000 {
+  max-width: 2000px;
+  margin: auto;
+}
+
+.bg-yellow {
+  background: #f9c449;
 }
 
 /* Spaces */
@@ -531,6 +544,7 @@ span.nowrap {
 
 header {
   position: relative;
+  background-color: #f9c449;
 }
 
 .navbar {
@@ -548,10 +562,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.navbar.bg-yellow {
-  background-color: #f9c449;
 }
 
 .nav-links {

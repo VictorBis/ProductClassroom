@@ -1,13 +1,11 @@
 header {
   position: relative;
+  background-color: $yellow;
 }
 
 .navbar {
   padding: 1.125rem 1rem;
   @include flex(center, center, row);
-  &.bg-yellow {
-    background-color: $yellow;
-  }
 }
 
 .nav-links {

@@ -43,6 +43,10 @@ span.nowrap {
   margin: 0;
 }
 
+.width-100{
+  width: 100%;
+}
+
 .width-66 {
   width: 66%;
 }
@@ -101,6 +105,14 @@ span.nowrap {
   margin-right: 2rem;
 }
 
+.max-width-2000{
+  max-width: 2000px;
+  margin:auto;
+}
+
+.bg-yellow{
+  background: $yellow;
+}
 /* Spaces */
 
 .padding-88 {
