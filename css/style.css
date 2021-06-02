@@ -1390,6 +1390,27 @@ footer .copyright {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .lecturer-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .lecturer-card img {
+    margin-bottom: 1.5rem;
+  }
+}
+
 /* Mini tablet */
 @media screen and (min-width: 500px) {
   .final-cta .card-cta-container .card-cover {
@@ -1541,6 +1562,27 @@ footer .copyright {
   }
   .accordion-container {
     padding: 2rem 3.5rem 2rem 6.875rem;
+  }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1150px) {
+  .lecturer-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .lecturer-card img {
+    margin-bottom: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
