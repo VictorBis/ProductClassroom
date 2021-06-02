@@ -87,6 +87,9 @@ span.nowrap {
   & :first-child {
     margin-right: 1rem;
   }
+  &.margin-right{
+    margin-right: 2rem;
+  }
 }
 
 .cta {
@@ -175,8 +178,8 @@ span.nowrap {
     margin-top: 2rem;
     text-align: center;
   }
-  &.flex{
-    @include flex(center, center, column);
+  &.flex-row{
+    @include flex(flex-end, center, row);
   }
 }
 /* Small Mobile */
