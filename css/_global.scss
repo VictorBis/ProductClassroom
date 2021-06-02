@@ -8,6 +8,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 ul {
@@ -28,7 +29,7 @@ section {
   padding: 0 1rem;
 }
 
-button{
+button {
   border: none;
   background: none;
   cursor: pointer;
@@ -43,7 +44,7 @@ span.nowrap {
   margin: 0;
 }
 
-.width-100{
+.width-100 {
   width: 100%;
 }
 
@@ -105,12 +106,12 @@ span.nowrap {
   margin-right: 2rem;
 }
 
-.max-width-2000{
+.max-width-2000 {
   max-width: 2000px;
-  margin:auto;
+  margin: auto;
 }
 
-.bg-yellow{
+.bg-yellow {
   background: $yellow;
 }
 /* Spaces */
@@ -132,7 +133,7 @@ span.nowrap {
   margin-top: 3rem;
 }
 
-.top-24{
+.top-24 {
   margin-top: 1.5rem;
 }
 
@@ -179,21 +180,21 @@ span.nowrap {
   }
 }
 
-.download-link{
+.download-link {
   margin-top: 1rem;
 }
 
-.btn-container{
-  &.center{
+.btn-container {
+  &.center {
     margin-top: 2rem;
     text-align: center;
   }
-  &.flex-row{
+  &.flex-row {
     @include flex(center, center, column);
   }
 }
 
-.cta-container{
+.cta-container {
   @include flex(flex-end, center, row);
 }
 /* Small Mobile */
@@ -216,15 +217,15 @@ span.nowrap {
     gap: 3rem 1.5rem;
   }
   .see-more-wrapper {
-    &.margin-right{
+    &.margin-right {
       margin-right: 2rem;
     }
   }
   .btn {
     padding: 1rem 4.75rem;
   }
-  .btn-container{
-    &.flex-row{
+  .btn-container {
+    &.flex-row {
       @include flex(flex-end, center, row);
     }
   }
