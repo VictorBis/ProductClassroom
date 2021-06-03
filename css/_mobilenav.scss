@@ -2,6 +2,7 @@
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  z-index: 2;
   @include flex(flex-end, flex-end, column);
   & .floating-btn-container {
     @include flex(center, center, row);
