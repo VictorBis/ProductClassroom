@@ -246,7 +246,8 @@
     }
   }
 
-  .multiple-card-cta-container-back, .multiple-card-cta-container-front {
+  .multiple-card-cta-container-back,
+  .multiple-card-cta-container-front {
     width: 61%;
     margin: auto;
     padding: 1.75rem 1rem 3.5rem 1rem;
@@ -267,11 +268,11 @@
     }
   }
 
-  .multiple-card-cta-container-front{
+  .multiple-card-cta-container-front {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
   }
 
@@ -339,21 +340,25 @@
       & .category {
         & .categories {
           @include flex(flex-start, flex-start, row);
+          flex-wrap: wrap;
           & li {
             padding: 0.5rem 1.5rem;
             color: white;
             border-radius: 4px;
+            width: 7rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
             &:not(:last-child) {
               margin-right: 0.5rem;
             }
-            &.mentor {
-              background-color: $darkblue;
+            &.guest-critic {
+              background-color: $orange;
             }
             &.lecturer {
-              background-color: $darkgreen;
+              background-color: $darkblue;
             }
             &.speaker {
-              background-color: $orange;
+              background-color: $darkgreen;
             }
           }
         }
@@ -381,38 +386,37 @@
 }
 
 /* Accordion */
-.accordion{
+.accordion {
   @include flex(space-between, center, row);
-  & img{
-    padding:0.5rem 0 0.5rem 0.5rem;
+  & img {
+    padding: 0.5rem 0 0.5rem 0.5rem;
     width: 3.25rem;
     height: auto;
     transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
-  &.active{
-    &  img{
+  &.active {
+    & img {
       transform: rotate(-180deg);
     }
   }
 }
-.accordion-container{
+.accordion-container {
   width: 100%;
   border: 1.5px solid $black;
   border-radius: 8px;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
   padding: 2rem 1rem;
 
-  & .accordion-desc{
+  & .accordion-desc {
     display: none;
-    & .desc{
-      padding: 2rem  0;
-      & .accordion-field{
-        & .bold-19{
+    & .desc {
+      padding: 2rem 0;
+      & .accordion-field {
+        & .bold-19 {
           margin-bottom: 0.5rem;
         }
       }
     }
-    
   }
 }
 
@@ -420,7 +424,8 @@
 
 @media screen and (max-width: 480px) {
   .final-cta {
-    .multiple-card-cta-container-back, .multiple-card-cta-container-front {
+    .multiple-card-cta-container-back,
+    .multiple-card-cta-container-front {
       width: 70%;
       & .card-cover {
         & img {
@@ -434,7 +439,7 @@
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .lecturer-card {
     @include flex(flex-start, flex-start, column);
     & img {
@@ -522,34 +527,33 @@
       transform: translateX(-20rem);
     }
   }
-   /* Accordion */
-  .accordion{
+  /* Accordion */
+  .accordion {
     @include flex(space-between, center, row);
-    & img{
-        padding:0.5rem 0 0.5rem 0.5rem;
-        width: 3.25rem;
-        height: auto;
-        transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    & img {
+      padding: 0.5rem 0 0.5rem 0.5rem;
+      width: 3.25rem;
+      height: auto;
+      transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
     }
-    &.active{
-        &   img{
-            transform: rotate(-180deg);
-        }
+    &.active {
+      & img {
+        transform: rotate(-180deg);
+      }
     }
   }
-  .accordion-container{
+  .accordion-container {
     width: 100%;
     border: 1.5px solid $black;
     border-radius: 8px;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
     padding: 2rem 3.5rem 2rem 5rem;
 
-    & .accordion-desc{
-        display: none;
-        & .desc{
-            padding: 2rem 3.375rem 2rem 0;
-        }
-
+    & .accordion-desc {
+      display: none;
+      & .desc {
+        padding: 2rem 3.375rem 2rem 0;
+      }
     }
   }
 }
@@ -576,7 +580,7 @@
       }
     }
   }
-  .accordion-container{
+  .accordion-container {
     padding: 2rem 3.5rem 2rem 6.875rem;
   }
 }
@@ -599,12 +603,12 @@
       }
     }
   }
-  .accordion-container{
+  .accordion-container {
     padding: 2rem 3.5rem 2rem 6.875rem;
   }
 }
 
-@media screen and (min-width:1500px){
+@media screen and (min-width: 1500px) {
   .final-cta {
     .width-50 {
       width: 40%;
@@ -612,7 +616,7 @@
   }
 }
 
-@media screen and (min-width: 960px) and (max-width:1150px) {
+@media screen and (min-width: 960px) and (max-width: 1150px) {
   .lecturer-card {
     @include flex(flex-start, flex-start, column);
     & img {
@@ -621,9 +625,9 @@
   }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .final-cta {
-    .card-cta-container{
+    .card-cta-container {
       & .card-cover {
         & img {
           margin-top: -1.3px;

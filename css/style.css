@@ -1166,7 +1166,8 @@ footer .copyright {
   margin-bottom: 3.5rem;
 }
 
-.final-cta .multiple-card-cta-container-back, .final-cta .multiple-card-cta-container-front {
+.final-cta .multiple-card-cta-container-back,
+.final-cta .multiple-card-cta-container-front {
   width: 61%;
   margin: auto;
   padding: 1.75rem 1rem 3.5rem 1rem;
@@ -1176,14 +1177,16 @@ footer .copyright {
   border: 3px solid #000000;
 }
 
-.final-cta .multiple-card-cta-container-back img, .final-cta .multiple-card-cta-container-front img {
+.final-cta .multiple-card-cta-container-back img,
+.final-cta .multiple-card-cta-container-front img {
   width: 100%;
   height: auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-.final-cta .multiple-card-cta-container-back h2, .final-cta .multiple-card-cta-container-front h2 {
+.final-cta .multiple-card-cta-container-back h2,
+.final-cta .multiple-card-cta-container-front h2 {
   padding: 3rem 1rem 1.75rem 1rem;
 }
 
@@ -1304,28 +1307,33 @@ footer .copyright {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .lecturer-card .info-container .main-info .category .categories li {
   padding: 0.5rem 1.5rem;
   color: white;
   border-radius: 4px;
+  width: 7rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .lecturer-card .info-container .main-info .category .categories li:not(:last-child) {
   margin-right: 0.5rem;
 }
 
-.lecturer-card .info-container .main-info .category .categories li.mentor {
-  background-color: #497ebf;
+.lecturer-card .info-container .main-info .category .categories li.guest-critic {
+  background-color: #fc8746;
 }
 
 .lecturer-card .info-container .main-info .category .categories li.lecturer {
-  background-color: #0bba85;
+  background-color: #497ebf;
 }
 
 .lecturer-card .info-container .main-info .category .categories li.speaker {
-  background-color: #fc8746;
+  background-color: #0bba85;
 }
 
 .lecturer-card .info-container .main-info .name-company {
@@ -1405,7 +1413,7 @@ footer .copyright {
 }
 
 .accordion-container .accordion-desc .desc {
-  padding: 2rem  0;
+  padding: 2rem 0;
 }
 
 .accordion-container .accordion-desc .desc .accordion-field .bold-19 {
@@ -1414,13 +1422,16 @@ footer .copyright {
 
 /* Mobile */
 @media screen and (max-width: 480px) {
-  .final-cta .multiple-card-cta-container-back, .final-cta .multiple-card-cta-container-front {
+  .final-cta .multiple-card-cta-container-back,
+  .final-cta .multiple-card-cta-container-front {
     width: 70%;
   }
-  .final-cta .multiple-card-cta-container-back .card-cover img, .final-cta .multiple-card-cta-container-front .card-cover img {
+  .final-cta .multiple-card-cta-container-back .card-cover img,
+  .final-cta .multiple-card-cta-container-front .card-cover img {
     padding: 0;
   }
-  .final-cta .multiple-card-cta-container-back .btn, .final-cta .multiple-card-cta-container-front .btn {
+  .final-cta .multiple-card-cta-container-back .btn,
+  .final-cta .multiple-card-cta-container-front .btn {
     padding: 1rem 2.75rem;
   }
 }
@@ -1637,6 +1648,7 @@ footer .copyright {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
