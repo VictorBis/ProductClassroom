@@ -442,9 +442,16 @@ span.nowrap {
 }
 
 /* Small Mobile */
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 340px) {
   .cube-wrapper {
     margin-right: 1rem;
+  }
+  .flex-auto-resize .step-container {
+    width: 100%;
+  }
+  .flex-auto-resize .step-container img {
+    width: 15rem;
+    height: auto;
   }
 }
 
