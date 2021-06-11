@@ -444,6 +444,7 @@
     @include flex(flex-start, flex-start, column);
     & img {
       margin-bottom: 1.5rem;
+      margin-right: 0;
     }
   }
 }
@@ -621,6 +622,7 @@
     @include flex(flex-start, flex-start, column);
     & img {
       margin-bottom: 1.5rem;
+      margin-right: 0;
     }
   }
 }
