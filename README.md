@@ -19,7 +19,7 @@ All the elemets that are in the website are organized in the following folders:
 - [img](#images) - Images contained in the website
 - [doc](https://github.com/VictorBis/ProductClassroom/tree/main/doc) - Contains the curriculums PDF's
 - [favicon](https://github.com/VictorBis/ProductClassroom/tree/main/favicon) - Contains all the icons that are needed to show a favicon in the different browsers
-- [Page name](#page-templates) - Every page in the website is in its own folder
+- [Pages](#page-templates) - Every page in the website is in its own folder
 
 ---
 
@@ -145,6 +145,8 @@ All the images conatined in the website should be placed in its corresponding fo
 
 All the content that you can add to the website has its own template in its HTML, so you should only copy/paste and change the information required.
 
+### Home
+
 <details>
 <summary>Adding a partner</summary>
 
@@ -155,7 +157,7 @@ All the content that you can add to the website has its own template in its HTML
 </details>
 
 <details>
-<summary>Adding a curriculum week (Home)</summary>
+<summary>Adding a curriculum week</summary>
 
 ```html
 <div class="colored-cards">
@@ -173,7 +175,7 @@ All the content that you can add to the website has its own template in its HTML
 </details>
 
 <details>
-<summary>Adding a past classmate case study (Home)</summary>
+<summary>Adding a past classmate case study</summary>
 
 ```html
 <div class="case-study">
@@ -231,7 +233,7 @@ All the content that you can add to the website has its own template in its HTML
 </details>
 
 <details>
-<summary>Adding a mentor (Home)</summary>
+<summary>Adding a mentor</summary>
 
 ```html
 <div class="lecturer-speaker-small">
@@ -255,7 +257,7 @@ All the content that you can add to the website has its own template in its HTML
 </details>
 
 <details>
-<summary>Adding a question (Home)</summary>
+<summary>Adding a question</summary>
 
 ```html
 <div class="colored-cards">
@@ -270,7 +272,7 @@ All the content that you can add to the website has its own template in its HTML
 </details>
 
 <details>
-<summary>Updating next event (Home)</summary>
+<summary>Updating next event</summary>
 
 The event thumbnail should replace th current one in the [Figma file](https://www.figma.com/file/j8x4p6uX4MpyxLZYfbhKoU/WebDev?node-id=116%3A2), be exported as PNG with the name _Events-Thumbnail.png_ and placed in this folder, so it'll be automatically replaced in the website.
 
@@ -302,6 +304,72 @@ The event thumbnail should replace th current one in the [Figma file](https://ww
   <div class="lecturer-short-desc">
     <h5 class="bold-24">[Admin's name]</h5>
     <p class="medium-21">[Position]</p>
+  </div>
+</div>
+```
+
+</details>
+
+### Curriculum
+
+<details>
+<summary>Adding a curriculum week</summary>
+
+```html
+<div class="colored-cards">
+  <div class="card-background red"></div>
+  <div class="card-content">
+    <h3 class="semibold-30 card-title week-flex">
+      <strong class="bold-30">WEEK [number] : [Title]</strong>
+      <span class="no-margin-top"
+        >[Speaker/Lecturer] * [Name] @ [Position]</span
+      >
+    </h3>
+    <p class="medium-19 card-description">[Description]</p>
+  </div>
+</div>
+```
+
+</details>
+
+<details>
+<summary>Adding a case study</summary>
+
+```html
+<div class="case-study">
+  <a href="[Figma/AdobeXD] link" target="_blank" class="window">
+    <div class="window-actions blue">
+      <div class="window-icon-wrapper">
+        <img src="../img/Icons/Close.svg" alt="Close Icon" />
+      </div>
+      <div class="window-icon-wrapper">
+        <img src="../img/Icons/Max.svg" alt="Maximize Icon" class="width-21" />
+      </div>
+      <div class="window-icon-wrapper ">
+        <img src="../img/Icons/Min.svg" alt="Minimize icon" class="width-21" />
+      </div>
+    </div>
+    <img
+      src="../img/CaseStudies/[Thumbnail file name]"
+      alt="[Classmate's name] Case Study"
+      width="1905"
+      height="1146"
+      class="case-study-thumbnail"
+    />
+  </a>
+  <div class="testimonial">
+    <div class="graduate">
+      <img
+        src="../img/CaseStudies/Classmates/[Classmate's photo file name]"
+        alt="[Classmate's name] Picture"
+        width="168"
+        height="168"
+      />
+      <div class="project">
+        <a href=""><h5 class="semibold-24">[PROJECT TITLE]</h5></a>
+        <p class="medium-24">[CLASSMATE'S NAME | [COHORT SEMESTER]]</p>
+      </div>
+    </div>
   </div>
 </div>
 ```
