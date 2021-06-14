@@ -214,7 +214,9 @@ All the content that you can add to the website has its own template in its HTML
     <q class="semibold-italic-30"
       >Through the 13 weeks I became more confident about my design skills
       ...</q
-    ><a href="" class="medium-30">Read More</a>
+    ><a href="[Figma/AdobeXD link]" target="_blank" class="medium-30"
+      >Read More</a
+    >
     <div class="graduate">
       <img
         lazy="loading"
