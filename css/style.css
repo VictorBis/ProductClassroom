@@ -218,6 +218,7 @@ span.nowrap {
 
 .grid-50 .event-img {
   width: 100%;
+  height: auto;
 }
 
 .four-column-grid {
