@@ -375,3 +375,47 @@ The event thumbnail should replace th current one in the [Figma file](https://ww
 ```
 
 </details>
+
+### Classroom Advisors
+
+<details>
+<summary>Adding a mentor</summary>
+
+```html
+<div class="lecturer-card">
+  <img
+    src="../img/Lecturers+Speakers/[Mentor's photo file name]"
+    alt="[Mentor's name] picture"
+    lazy="loading"
+    width="400"
+    height="400"
+  />
+
+  <div class="info-container">
+    <div class="main-info">
+      <div class="category">
+        <ul class="categories">
+          <li class="lecturer semibold-16">LECTURER</li>
+          <li class="guest-critic semibold-16">CRITIC</li>
+          <li class="speaker semibold-16">SPEAKER</li>
+        </ul>
+      </div>
+      <div class="name-company">
+        <h3 class="semibold-30">[Mentor's name]</h3>
+        <h4 class="medium-24">[Position] @ [Company]</h4>
+      </div>
+    </div>
+    <div class="lecturer-links">
+      <ul class="links">
+        <li class="semibold-16"><a target="_blank" href="[URL]">Website</a></li>
+        <li class="semibold-16">
+          <a target="_blank" href="[URL]">LinkedIn</a>
+        </li>
+        <li class="semibold-16"><a target="_blank" href="[URL]">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+```
+
+</details>
