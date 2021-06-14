@@ -419,3 +419,20 @@ The event thumbnail should replace th current one in the [Figma file](https://ww
 ```
 
 </details>
+
+### FAQ's
+
+<details>
+<summary>Adding a question</summary>
+
+```html
+<div class="colored-cards">
+  <div class="card-background purple"></div>
+  <div class="card-content">
+    <h3 class="bold-30 faq card-title">Q. [Question]?</h3>
+    <p class="medium-19 card-description">[Answer]</p>
+  </div>
+</div>
+```
+
+</details>
