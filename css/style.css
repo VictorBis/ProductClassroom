@@ -775,6 +775,8 @@ footer .copyright {
 
 .hero .partenrs img {
   margin: 0 0.5rem;
+  max-height: 1.875rem;
+  width: auto;
 }
 
 .hero .partenrs :first-child {

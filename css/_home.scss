@@ -31,6 +31,8 @@
     margin-top: 2.5rem;
     & img {
       margin: 0 0.5rem;
+      max-height: 1.875rem;
+      width: auto;
     }
     & :first-child {
       margin-right: 1rem;
@@ -71,7 +73,7 @@
 
 /* Desktop */
 @media screen and (min-width: 2010px) {
-  .hero{
+  .hero {
     padding: 0 4.5rem;
   }
 }

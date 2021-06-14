@@ -19,7 +19,7 @@ All the elemets that are in the website are organized in the following folders:
 - [img](#images) - Images contained in the website
 - [doc](https://github.com/VictorBis/ProductClassroom/tree/main/doc) - Contains the curriculums PDF's
 - [favicon](https://github.com/VictorBis/ProductClassroom/tree/main/favicon) - Contains all the icons that are needed to show a favicon in the different browsers
-- \[Page name] - Every page in the website is in its own folder
+- [Page name](#page-templates) - Every page in the website is in its own folder
 
 ---
 
@@ -122,6 +122,7 @@ The files contained in this folder make possible the funtionality of the mobile 
 ## Images
 
 All the images conatined in the website should be placed in its corresponding folder to keep the defined organization.
+
 **Important**: Before adding an image (png, jpg, jpeg, etc.) try to reduce the size of it as much as possible using tools such as [tinypng](https://tinypng.com), [compress jpeg](https://compressjpeg.com), [iloveimg](https://www.iloveimg.com/compress-image), or anyone you prefer.
 
 <details>
@@ -137,5 +138,18 @@ All the images conatined in the website should be placed in its corresponding fo
 - [Members](https://github.com/VictorBis/ProductClassroom/tree/main/img/Members) - Photos of the admins of PC.
 - [Partners](https://github.com/VictorBis/ProductClassroom/tree/main/img/Partners) - Logos of the partens of PC, preferably save them as SVG.
 - [SN-Thumbnail](https://github.com/VictorBis/ProductClassroom/tree/main/img/SN-Thumbnail) - Thumbnail showed when you share the link on socials.
+
+</details>
+
+## Page templates
+
+All the content that you can add to the website has its own template in its HTML, so you should only copy/paste and change the information required.
+
+<details>
+<summary>Adding a partner</summary>
+
+```html
+<img src="img/Partners/[FileName]" alt="[Partner's name] Logo" />
+```
 
 </details>
