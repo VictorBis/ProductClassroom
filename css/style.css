@@ -1288,6 +1288,7 @@ footer .copyright {
       -ms-grid-row-align: center;
       align-self: center;
   border-radius: 50%;
+  border: 1.5px solid #000000;
 }
 
 .lecturer-card .info-container {

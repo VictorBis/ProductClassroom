@@ -332,6 +332,7 @@
     margin-right: 1.5rem;
     align-self: center;
     border-radius: 50%;
+    border: 1.5px solid $black;
   }
   & .info-container {
     @include flex(space-between, flex-start, column);
